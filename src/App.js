@@ -16,17 +16,18 @@ export default class App extends React.Component {
   render () {
     return (
       <div>
-        <header style={{background: '#3f3f3f', padding: '5px'}}>
+        <header className="App-header">
           <Link to="/">
-            <img width="200" style={{display: 'inline-block', verticalAlign: 'middle'}} src={logo} alt="<csipro/>" />
+            <img className="App-logo" src={logo} alt="<csipro/>" />
             <h3 style={{margin: 0, marginLeft: 5, color: '#fff', display: 'inline-block', verticalAlign: 'middle'}}>Creador de posters de eventos</h3>
           </Link>
           {
-            (this.props.location.pathname !== "/") ?
-                <Button onClick={ this.onClick.bind(this) } /> : null
+            (this.props.location.pathname !== "/") ? <Button onClick={ this.onClick.bind(this) } /> : null
           }
         </header>
-        {this.props.children}
+        <div style={{maxWidth: 1300, margin: '10px auto'}}>
+          {this.props.children}
+        </div>
       </div>
     )
   }

@@ -6,9 +6,11 @@ export default class Input extends Component {
       <div
         contentEditable
         children={ this.props.text }
-        style={{
-          display: 'inline-block'
-        }}
+        style={Object.assign({}, {
+          display: 'inline-block',
+          fontWeight: '500',
+          textDecoration: 'underline'
+        }, this.props.style || {})}
       />
     );
   }

@@ -24,13 +24,18 @@ function createDateString () {
 class Poster extends Component {
   render() {
     return (
-      <div className="App" style={{background: `#${this.props.route.color}`, maxWidth: '958px', margin: '10px auto 0'}}>
+      <div className="App" style={{background: `#${this.props.route.color}`}}>
         <div className="InsideBox">
-          <h2>Te invitamos a <img alt="<csitalks/>" style={{width: 200, verticalAlign: 'middle', margin: '0 5px'}} src={this.props.route.image}/> este <Input text={ createDateString() }/></h2>
-          <h2>Tema: "<Input text="Nombre de la plática"/>"</h2>
+          <h2>Te invitamos a
+            <img alt="<csitalks/>" style={{width: 250, verticalAlign: 'middle', margin: '0 5px'}} src={this.props.route.image}/>
+            este <Input text={ createDateString() }/>
+          </h2>
+          <h2>Tema: &ldquo;<Input text="Nombre de la plática"/>&rdquo;</h2>
           <h2>Presenta: <Input text="Nombre weón"/></h2>
-          <h2>Hora: <Input text="1:00"/>pm</h2>
-          <h2>Lugar: <Input text="5J-205 (CSIPro)"/></h2>
+          <h2>Hora: <Input text="1:00pm"/></h2>
+          <h2>Lugar: <Input text="5J 205 - CSIPro, Ingeniería Industrial Unison"/></h2>
+
+          <h3 style={{fontSize: '25px', marginBottom: '5px'}}>Un evento de</h3>
           <img alt="<csipro/>" width="200" src={logo} />
           <ul className="SocialNetworks">
             <li className="twitter">
