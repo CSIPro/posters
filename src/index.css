@@ -2,10 +2,4 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #f7f7f7;
-  /*background: #4FB799;*/
-}
-
-* {
-  box-sizing: border-box;
 }

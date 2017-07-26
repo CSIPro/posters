@@ -1,33 +1,21 @@
-import React from 'react';
-import logo from './csiproblanco.png';
-import Button from './Button';
-import { Link } from 'react-router';
-import domToImage from 'dom-to-image';
-import fileSaver from 'file-saver';
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-export default class App extends React.Component {
-  onClick (e) {
-    e.preventDefault();
-    domToImage.toBlob(document.getElementsByClassName('App')[0])
-      .then(blob => {
-        fileSaver.saveAs(blob, 'poster.png');
-      })
-  }
-  render () {
+class App extends Component {
+  render() {
     return (
-      <div>
-        <header style={{background: '#3f3f3f', padding: '5px'}}>
-          <Link to="/">
-            <img width="200" style={{display: 'inline-block', verticalAlign: 'middle'}} src={logo} alt="<csipro/>" />
-            <h3 style={{margin: 0, marginLeft: 5, color: '#fff', display: 'inline-block', verticalAlign: 'middle'}}>Creador de posters de eventos</h3>
-          </Link>
-          {
-            (this.props.location.pathname !== "/") ?
-                <Button onClick={ this.onClick.bind(this) } /> : null
-          }
-        </header>
-        {this.props.children}
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
       </div>
-    )
+    );
   }
 }
+
+export default App;

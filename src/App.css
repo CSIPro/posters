@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  padding: 15px;
 }
 
 .App-logo {
@@ -22,36 +21,4 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-
-.InsideBox {
-  background: #fff;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-  padding: 30px;
-}
-
-.SocialNetworks {
-  list-style: none;
-  padding: 0;
-}
-
-.SocialNetworks li {
-  display: inline-block;
-  width: 33.333333%;
-  margin: 0;
-  font-size: 19px;
-}
-
-.twitter {
-  color: #5EA8DD;
-}
-
-.facebook {
-  color: #3C5988
-}
-
-.fa {
-  margin-right: 5px;
 }
