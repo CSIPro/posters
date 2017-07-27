@@ -1,0 +1,30 @@
+.CardContainer {
+  width: 40%;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.Card {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  width: 49%;
+  display: inline-block;
+  border-radius: 5px;
+  padding: .2em .8em;
+  background: #fff;
+  cursor: pointer;
+  transition-duration: .2s;
+  will-change: transform;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
+.Card:nth-child(1) {
+  margin-right: 1%;
+}
+
+.Card:nth-child(2) {
+  margin-left: 1%;
+}
