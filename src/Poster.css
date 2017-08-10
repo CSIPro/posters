@@ -1,0 +1,85 @@
+.Poster-container {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.Poster-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Poster-image {
+  background: rgba(255, 255, 255, .25);
+  width: 44%;
+  margin: 0 28%;
+}
+
+.Poster-text-container {
+  margin: 0 4vh;
+  font-size: 2vw;
+  font-weight: 100;
+}
+
+small {
+  display: block;
+  font-size: 75%;
+}
+
+.Poster-presentadores-container {
+  list-style: none;
+  border-left: 5px solid;
+  padding-left: .8em;
+  font-size: 3vw;
+}
+
+.CSITalks {
+  background: #5d2765;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+.Poster-socialNetworks-item {
+  display: flex;
+}
+
+.Poster-input {
+  background: inherit;
+  font-size: inherit;
+  color: #fff!important;
+  font-weight: bold;
+  font-family: inherit;
+  border: 0;
+}
+
+.Poster-socialNetworks-iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #808080;
+  font-size: 2vw;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.Poster-socialNetworks-itemList {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.Poster-socialNetworks-container {
+  display: flex;
+  align-content: flex-end;
+}
+
+.Poster-socialNetworks-CSILogo {
+  width: 20%;
+}

@@ -1,9 +1,5 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 80px;
+  height: 60px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
@@ -22,6 +18,8 @@
   margin: 0;
   display: inline-block;
   vertical-align: middle;
+  color: #fff;
+  font-size: 1.2em;
 }
 
 .App-intro {

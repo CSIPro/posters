@@ -8,6 +8,7 @@ export default class Home extends Component {
   render () {
     return (
       <div>
+        <h3>Elige el evento a crear</h3>
         <ul className="CardContainer">
           <li className="Card">
             <Link to="/talks">
