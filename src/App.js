@@ -25,7 +25,7 @@ class App extends Component {
           <Route path="/talks" component={CSITalksPoster}/>
           <Route path="/code"
           render={() => (
-            <h3>CSICode</h3>
+            <h3>En construcción</h3>
           )}/>
         </div>
       </Router>
