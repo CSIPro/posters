@@ -109,43 +109,48 @@ export default class PosterCSITalks extends React.Component {
         <div className="Poster-information-container">
           <h2>Introduce la información de la plática</h2>
           <form>
-            <label>Nombre de la plática</label>
-            <input
-              type="text"
-              className="Poster-information-input"
-              onChange={this.setNombrePlatica}
-            />
-            <label>¿Quién presenta?</label>
-            <input
-              type="text"
-              className="Poster-information-input"
-              onChange={this.setNombrePresentador}
-            />
-            <label>Fecha y hora de la plática</label>
-            <div className="kronos-container">
-              <Kronos
-                date={this.state.selectedDate}
-                min={setStartOfTheDay(this.rightNow)}
-                preventClickOnDateTimeOutsideRange
-                format="MMMM D, YYYY"
-                options={{
-                  locale: {
-                    lang: "es"
-                  },
-                  corners: 0
-                }}
-                onChangeDateTime={this.setDate}
-                returnAs="JS_DATE"
+            <div className="Poster-information-inputContainer">
+              <label>Nombre de la plática</label>
+              <input
+                type="text"
+                className="Poster-information-input"
+                onChange={this.setNombrePlatica}
               />
             </div>
-            <div className="kronos-container">
-              <Kronos
-                time={this.state.selectedDate}
-                min={this.rightNow}
-                preventClickOnDateTimeOutsideRange
-                onChangeDateTime={this.setHours}
-                returnAs="JS_DATE"
+            <div className="Poster-information-inputContainer">
+              <label>¿Quién presenta?</label>
+              <input
+                type="text"
+                className="Poster-information-input"
+                onChange={this.setNombrePresentador}
               />
+            </div>
+            <div className="Poster-information-inputContainer">
+              <label>Fecha y hora de la plática</label>
+              <div className="kronos-container">
+                <Kronos
+                  date={this.state.selectedDate}
+                  min={setStartOfTheDay(this.rightNow)}
+                  preventClickOnDateTimeOutsideRange
+                  format="MMMM D, YYYY"
+                  options={{
+                    locale: {
+                      lang: "es"
+                    }
+                  }}
+                  onChangeDateTime={this.setDate}
+                  returnAs="JS_DATE"
+                />
+              </div>
+              <div className="kronos-container">
+                <Kronos
+                  time={this.state.selectedDate}
+                  min={this.rightNow}
+                  preventClickOnDateTimeOutsideRange
+                  onChangeDateTime={this.setHours}
+                  returnAs="JS_DATE"
+                />
+              </div>
             </div>
           </form>
           <button 
