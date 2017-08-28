@@ -132,6 +132,7 @@ export default class PosterCSITalks extends React.Component {
                   date={this.state.selectedDate}
                   min={setStartOfTheDay(this.rightNow)}
                   preventClickOnDateTimeOutsideRange
+                  inputClassName="Poster-information-input"
                   format="MMMM D, YYYY"
                   options={{
                     locale: {
@@ -147,6 +148,7 @@ export default class PosterCSITalks extends React.Component {
                   time={this.state.selectedDate}
                   min={this.rightNow}
                   preventClickOnDateTimeOutsideRange
+                  inputClassName="Poster-information-input"
                   onChangeDateTime={this.setHours}
                   returnAs="JS_DATE"
                 />
